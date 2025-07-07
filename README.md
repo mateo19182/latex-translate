@@ -3,7 +3,7 @@
 A simple Python CLI tool to translate LaTeX files using LLM APIs while preserving math, citations, and LaTeX structure.
 
 Created to translate my [thesis](https://github.com/mateo19182/TFG) from Galician to English.
-The alternatives ([Translatex](https://github.com/habaneraa/TransLaTeX), [trsltx](https://github.com/phelluy/trsltx)) either did weird chunking or did used weird APIs.
+The alternatives ([Translatex](https://github.com/habaneraa/TransLaTeX), [trsltx](https://github.com/phelluy/trsltx)) either did bad chunking or used weird APIs.
 
 ## Features
 
