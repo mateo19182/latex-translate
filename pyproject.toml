@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "latex-translate"
+version = "1.0.0"
+description = "A CLI tool for translating LaTeX files using LLM APIs while preserving structure"
+readme = "README.md"
+requires-python = ">=3.8.1"
+authors = [
+    { name = "LaTeX Translator" }
+]
+keywords = ["latex", "translation", "llm", "academic"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Text Processing :: Markup :: LaTeX",
+    "Topic :: Scientific/Engineering"
+]
+
+dependencies = [
+    "requests>=2.31.0",
+    "tiktoken>=0.5.0",
+    "urllib3>=2.0.0",
+]
+
+[project.scripts]
+latex-translate = "latex_translate:main"
+
+[project.urls]
+Homepage = "https://github.com/latex-translate/latex-translate"
+Repository = "https://github.com/latex-translate/latex-translate"
+Issues = "https://github.com/latex-translate/latex-translate/issues"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+] 
